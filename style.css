@@ -4,11 +4,28 @@ body, h1, h2, p{
 
 }
 
-body {
-    font-family: arial, sans-seriff;
-    background-color: white;
-    line-height: 1.6;
+.banner{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
 }
+
+    /* Set a background image for the body */
+body {
+    font-family: Arial, sans-serif;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff; /* Set text color to be readable on the background image */
+}
+
+/* Rest of your existing CSS styles */
+
 
 header {
     background-color: black;
@@ -23,27 +40,72 @@ header h1 {
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
+
+    
+
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
 }
 
-nav a {
-    text-decoration: none;
+nav li a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-section {
-    padding: 2rem;
+a:hover {
+    color: pink;
+    transition: .1s;
+    cursor: pointer;
+
 }
+
+.aboutme{
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: yellow;
+    font-weight: bold;
+    font-size: 75px;
+    margin: 20px 0px 20px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+h4{
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+
+
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: black;
+    background-color: #333;
     color: white;
+}
+
+.project {
+    margin-bottom: 20px;
 }
